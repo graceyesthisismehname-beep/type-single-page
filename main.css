@@ -1,14 +1,13 @@
 @font-face {
-    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff");
-    font-family: 'Forma';
+    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2");
+    font-family: 'megascope-v2';
     font-style: normal;
     font-weight: normal;
     }
     
     body{
     background-color: pink;
-    font-family: 'Forma';
+    font-family: 'megascope-v2';
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
