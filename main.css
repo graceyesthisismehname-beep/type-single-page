@@ -6,7 +6,7 @@
     }
     
     body{
-    background-color: pink;
+    background-color: rgb(184, 162, 138);
     font-family: 'megascope-v2';
 }
 /* how the page wrapper will appear on mobile */
@@ -30,7 +30,8 @@ grid-template-areas:
 
 #history {
 grid-area: h;
-background-color: lightcoral;
+background-color: rgb(255, 234, 217);
+corner-block-end-shape: 50px;
 }
 
 #variations{
@@ -43,13 +44,13 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(138, 21, 21);
+    background-color: rgb(0, 0, 0);
     height:200px;
 }
 
 /* font styling area */
 h2{
-    color: firebrick;
+    color: rgb(0, 0, 0);
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
 }
 
@@ -79,7 +80,7 @@ h3{
     }
 }
 /* where the animation is for the width change */
-.width{
+.scope{
     animation: widthVariations 5s infinite;
 }
 @keyframes widthVariations {
@@ -92,7 +93,7 @@ h3{
 
 h5{
     font-size:40px;
-    color:blue;
+    color:rgb(73, 52, 35);
     margin:15px;
 }
 
@@ -117,6 +118,7 @@ h5{
     font-size: 7em;
     display:grid;
     place-content: center;
+    color: rgb(63, 45, 35);
     margin: 0;
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
