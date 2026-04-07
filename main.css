@@ -49,6 +49,10 @@ footer{
 }
 
 /* font styling area */
+h1{
+    color: black;
+}
+
 h2{
     color: rgb(0, 0, 0);
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
