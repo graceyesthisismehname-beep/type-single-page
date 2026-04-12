@@ -27,12 +27,24 @@ grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "v h"
-    "a a";
+    "A B Z"
+    "C D E"
+    "F G H"
+    "I I I";
 }
 
-#history {
-grid-area: h;
+#history1 {
+grid-area: "A";
+background-color: rgb(255, 234, 217);
+corner-block-end-shape: 50px;
+}
+#history2 {
+grid-area: "B";
+background-color: rgb(255, 234, 217);
+corner-block-end-shape: 50px;
+}
+#history3 {
+grid-area: "Z";
 background-color: rgb(255, 234, 217);
 corner-block-end-shape: 50px;
 }
