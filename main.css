@@ -9,9 +9,10 @@ transition: none !important; } }
     }
     
     body{
+    max-width: 100%;
+    max-height: 700px;
     background-color: rgb(184, 162, 138);
     font-family: 'megascope-v2';
-}
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     /* where to change the width of the columns on desktop view */
@@ -24,53 +25,116 @@ transition: none !important; } }
 .page-wrapper{
 display: grid;
 grid-gap: 25px;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-grid-template-areas: 
+margin-left: 3%;
+margin-right: 0%;
+grid-template-columns: 150px, 150%, 150%;
+grid-template-rows: 33%,33%,33%;
+grid-template-areas:
+    "f h l"
     "A B Z"
     "C D E"
-    "F G H"
-    "I I I";
+    "I G J";
 }
 
-#history1 {
-grid-area: "A";
-background-color: rgb(255, 234, 217);
-corner-block-end-shape: 50px;
-}
-#history2 {
-grid-area: "B";
-background-color: rgb(255, 234, 217);
-corner-block-end-shape: 50px;
-}
-#history3 {
-grid-area: "Z";
-background-color: rgb(255, 234, 217);
-corner-block-end-shape: 50px;
-}
+    #history1 {
+    grid-area: "A";
+    height: 150%;
+    transform: translate(70%,37%);
+    background-color: rgb(255, 234, 217);
+    corner-block-end-shape: 50px;
+    }
+    #history2 {
+    grid-area: "B";
+    height: 150%;
+    transform: translate(70%,37%);
+    background-color: rgb(255, 234, 217);
+    corner-block-end-shape: 50px;
+    }
+    #history3 {
+    grid-area: "Z";
+    height: 150%;
+    transform: translate(70%,37%);
+    background-color: rgb(255, 234, 217);
+    corner-block-end-shape: 50px;
+    }
 
+#break_4_sliders{
+    grid-area: "D";
+    .Break_BG{
+    transform: translate(9%,55%) scale(1.19);
+    z-index: -1;}
+    .TYPE_var{
+        z-index: 10;
+    }
+
+}
+#after_break{
+    max-height: 500px;
+    background-color: black;
+    #para1 {
+    grid-area: "I";
+    height: 150%;
+    transform: translate(0%,50%);
+    background-color: rgb(255, 234, 217);
+    corner-block-end-shape: 50px;
+    width: 33%;
+    height: 150%;
+    margin: 10%;
+    margin-top: 0%;
+    }
+    #para2 {
+    grid-area: "G";
+    height: 150%;
+    transform: translate(132%,-79%);
+    background-color: rgb(255, 234, 217);
+    corner-block-end-shape: 50px;
+    width: 33%;
+    height: 150%;
+    }
+    #para3 {
+    grid-area: "J";
+    height: 150%;
+    transform: rotate(90deg) translate(19%,-300%);
+    background-color: rgb(255, 234, 217);
+    corner-block-end-shape: 50px;
+    z-index: 1;
+    }
+}
 #variations{
-grid-area: v;
+grid-area: "C";
+color: #C9B8A6;
+letter-spacing: 50%;
+transform: translate(10%,-250%);
 }
 
 #alphabet {
-grid-area: a;
+grid-area: "I";
+text-align: center;
+letter-spacing: 12px;
+z-index: 10;
 }
 }
 /* CSS for the footer */
 footer{
     background-color: rgb(0, 0, 0);
+    .name{
+        color: #C9B8A6;
+        transform: translate(-7%,260%);
+    }
     height:200px;
 }
 
 /* font styling area */
 h1{
     color: black;
+    font-size: 5em;
+    line-height: 35%;
 }
 
 h2{
     color: rgb(0, 0, 0);
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
+    
 }
 
 h3{
@@ -78,6 +142,60 @@ h3{
     text-align: center;
     font-size: 5em;
     animation: weightChange 7s infinite;
+}
+h5{
+    color: black;
+    font-size: 5em;;
+    line-height: 55%;
+}
+p{
+    src: url("fonts/OutputSans2Beta-Regular.woff2") format("woff2");
+    font-family: 'OutputSans2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+p1{
+    src: url("fonts/OutputSans2Beta-Regular.woff2") format("woff2");
+    font-family: 'OutputSans2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+}
+p2{
+    src: url("fonts/OutputSans2Beta-Regular.woff2") format("woff2");
+    font-family: 'OutputSans2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+}
+p3{
+    src: url("fonts/OutputSans2Beta-Regular.woff2") format("woff2");
+    font-family: 'OutputSans2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+}
+p4{
+    src: url("fonts/OutputSans2Beta-Regular.woff2") format("woff2");
+    font-family: 'OutputSans2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+}
+p5{
+    src: url("fonts/OutputSans2Beta-Regular.woff2") format("woff2");
+    font-family: 'OutputSans2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+}
+p6{
+    src: url("fonts/OutputSans2Beta-Regular.woff2") format("woff2");
+    font-family: 'OutputSans2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
 }
 
 @keyframes weightChange {
@@ -112,7 +230,7 @@ h3{
 
 h5{
     font-size:40px;
-    color:rgb(73, 52, 35);
+    color:rgb(150, 126, 107);
     margin:15px;
 }
 
@@ -142,4 +260,4 @@ h5{
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
-
+    }

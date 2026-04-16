@@ -7,21 +7,51 @@
   }
 
   h1{
-    color: rgb(230, 194, 161);
+    color: rgb(0, 0, 0);
   }
   
   header {
     /* where to set the color of the nav bar */
-      background: rgb(0, 0, 0);
+      background: #C9B8A6;
+      .brown_slant{
+        transform:translate(-37%,-15%) scale(1.1);
+        position: fixed;
+        z-index: -1;
+        top: 0px;
+      }
+      .nav_underline{
+        transform: translate(9.35%,16%) scale(1.76);
+        position: fixed;
+        z-index: 0;
+        top: 0px;
+        width: 100%;
+      }
       text-align: left;
       top:0px;
       position: fixed;
       z-index: 999;
-      width: 100%
+      width: 100%;
+      height: 40%;
   }
-  
   .logo {
-    margin: 0;
+    grid-area: "f";
+    margin: 30px;
+    font-size: 100px;
+    padding-right: 0%;
+  }
+      .logo3 {
+    grid-area: "l";
+    margin: 30px;
+    font-size: 90px;
+    transform: translate(1000%,3%);
+  }
+  .logo2 {
+    grid-area: "h";
+    margin: 0px;
+    font-size: 50px;
+    transform: translate(900%,125%);
+    padding-right: 0%;
+    position: absolute;
   }
   /* where to change the background color of the pop-up nav bar*/
   nav {
@@ -87,7 +117,7 @@
           /* color of the hamburger menu */
           background: rgb(170, 140, 140);
           /* how far the hamburger menu is from the top */
-          margin-top:7px;
+          /* margin: top 40px;px; */
           height: 3px;
           width: 2em;
           position: relative;
@@ -120,6 +150,10 @@
     }
     header {
       display: grid;
+        grid-template-columns: max-content;
+        grid-template-areas: 
+    "A B Z"
+    "CCCCC";
       /* grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; */
     }
     .logo {
