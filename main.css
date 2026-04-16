@@ -10,7 +10,7 @@ transition: none !important; } }
     
     body{
     max-width: 100%;
-    max-height: 700px;
+    max-height: 2200px;
     background-color: rgb(184, 162, 138);
     font-family: 'megascope-v2';
 /* how the page wrapper will appear on mobile */
@@ -65,6 +65,7 @@ grid-template-areas:
     z-index: -1;}
     .TYPE_var{
         z-index: 10;
+        color: aqua;
     }
 
 }
@@ -114,6 +115,28 @@ letter-spacing: 12px;
 z-index: 10;
 }
 }
+.TYPE{
+        transform: translate(550%,-1290%) scale(7);
+        letter-spacing: 10%;
+        z-index: 10;
+        position: absolute;
+    }
+.Down{
+        transform: translate(35%,-4100%)scale(3);
+        letter-spacing: 10%;
+        z-index: 10;
+    }
+.Load{
+        transform: translate(35%,-4050%) scale(3);
+        letter-spacing: 20%;
+        z-index: 10;
+    }
+.button{
+        transform: translate(-530%,-775%) scale(1.2);
+        letter-spacing: 10%;
+        z-index: 10;
+        position: absolute;
+    }
 /* CSS for the footer */
 footer{
     background-color: rgb(0, 0, 0);
